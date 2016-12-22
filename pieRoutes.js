@@ -7,10 +7,12 @@
     var led = new Gpio(14, 'out');
 
     pieRoutes.get('/gpio14on', function(req, res) {
+      led.writeSync(true);
       res.status(200).json({ status: 'on' });
     });
 
     pieRoutes.get('/gpio14off', function(req, res) {
+      led.writeSync(false);
       res.status(200).json({ status: 'off' });
     });
 
