@@ -7,7 +7,7 @@ var notifier = require('node-notifier');
 var expressWs = require('express-ws')(app);
 
 // Custom module imports
-var blogRoutes = require('./blogRoutes.js');
+var pieRoutes = require('./pieRoutes.js');
 
 var router = express.Router();
 
@@ -26,7 +26,7 @@ router.get('/', function(req, res) {
   res.redirect('index.html');
 });
 
-app.use('/api/', blogRoutes.routes());
+app.use('/api/', pieRoutes.routes());
 
 app.listen(8080);
 console.log('Server running on port 8080...');
