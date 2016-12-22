@@ -3,7 +3,7 @@
 
     var express = require('express');
     var pieRoutes = express.Router();
-    var Gpio = require('onoff').Gpio;
+    // var Gpio = require('onoff').Gpio;
     // var led = new Gpio(14, 'out');
 
     pieRoutes.post('/pie', function(req, res) {
