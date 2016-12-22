@@ -6,9 +6,12 @@
     var Gpio = require('onoff').Gpio;
     // var led = new Gpio(14, 'out');
 
-    pieRoutes.post('/pie', function(req, res) {
+    pieRoutes.get('/gpio14on', function(req, res) {
+      res.status(200).json({ status: 'on' });
+    });
 
-      res.status(200).json({ body: req.body.id });
+    pieRoutes.get('/gpio14off', function(req, res) {
+      res.status(200).json({ status: 'off' });
     });
 
     module.exports = {
