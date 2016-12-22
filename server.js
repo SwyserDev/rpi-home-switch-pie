@@ -3,7 +3,6 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var http = require('http');
-var notifier = require('node-notifier');
 var expressWs = require('express-ws')(app);
 
 // Custom module imports

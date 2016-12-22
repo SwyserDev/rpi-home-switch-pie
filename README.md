@@ -1,2 +1,2 @@
-# uber-blog-api
-This is the API for my UberBlog
+# rpi-home-switch-pie
+This is the API for my RPI
